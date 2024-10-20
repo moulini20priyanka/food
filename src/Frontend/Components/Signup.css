@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.signup-page {
+  display: flex;
+  justify-content: flex-start; /* Aligns content to the left */
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  position: relative; /* Needed for absolute positioning of the background */
+  overflow: hidden; /* Hide overflow */
+}
+
+.bg {
+  position: absolute; /* Positioning the background image */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the entire area */
+  z-index: -1; /* Send the background image behind other content */
+}
+
+.signup-content {
+  background: rgb(160, 180, 192); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%; /* Full width for small screens */
+  margin-left: 280px; /* Space from the left edge */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #484e54; /* Change focus color if desired */
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #36383b; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8f8a94; /* Button hover color */
+}
+
+@media (max-width: 500px) {
+  .signup-content {
+    width: 90%; /* Responsive adjustment */
+    margin-left: 10px; /* Adjust margin for small screens */
+  }
+}
