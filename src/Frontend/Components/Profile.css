@@ -1,0 +1,99 @@
+.profile-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .profile-image {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid  #8f8a94; /* Border color */
+  }
+  
+  .connect-button,
+  .message-button {
+    background-color:  #8f8a94; /* Main color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between buttons */
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    margin: 10px 0 5px;
+  }
+  
+  .profile-location {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .profile-job,
+  .profile-education {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .stat p {
+    margin: 0;
+    color: #777;
+  }
+  
+  .show-more-button {
+    background-color:  #8f8a94; /* Secondary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  nav a {
+    display: inline-block; /* Make the links appear as buttons */
+    padding: 10px 20px; /* Add padding for a button-like look */
+    margin: 0 5px; /* Space between buttons */
+    border: 1px solid #abd3ab; /* Border color matching the example */
+    border-radius: 4px; /* Rounded corners */
+    color: #abd3ab; /* Text color */
+    text-decoration: none; /* Remove underline */
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  nav a.active {
+    background-color: #abd3ab; /* Background color when active */
+    color: white; /* Text color when active */
+    border: 1px solid #abd3ab; /* Keep border same color */
+  }
+  

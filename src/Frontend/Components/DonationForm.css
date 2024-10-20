@@ -1,0 +1,147 @@
+/* Ensure the page takes up the full height and use flexbox for layout */
+.donation-form-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 20px 0;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .header-content h1 {
+    color: white;
+  }
+  
+  .header-content nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .header-content nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main content should grow to fill available space */
+  .donation-form {
+    flex: 1;
+    width: 50%;
+    margin: 40px auto;
+    padding: 70px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .donation-form h2 {
+    text-align: center;
+    color: #4CAF50;
+  }
+  
+  .donation-form .highlight {
+    color: #ff5722;
+  }
+  
+  .donation-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .donation-form label {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .donation-form input[type="text"],
+  .donation-form input[type="number"],
+  .donation-form input[type="email"],
+  .donation-form input[type="tel"],
+  .donation-form select,
+  .donation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .donation-form .category-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .donation-form .category-images label {
+    text-align: center;
+  }
+  
+  .donation-form .category-image {
+    width: 150px;
+    height: 100px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .donation-form .category-image:hover {
+    border: 2px solid #4CAF50;
+  }
+  
+  .donation-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .donation-form button:hover {
+    background-color: #45a049;
+  }
+  
+  nav a {
+    display: inline-block; /* Make the links appear as buttons */
+    padding: 10px 20px; /* Add padding for a button-like look */
+    margin: 0 5px; /* Space between buttons */
+    border: 1px solid #abd3ab; /* Border color matching the example */
+    border-radius: 4px; /* Rounded corners */
+    color: #abd3ab; /* Text color */
+    text-decoration: none; /* Remove underline */
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  nav a.active {
+    background-color: #abd3ab; /* Background color when active */
+    color: white; /* Text color when active */
+    border: 1px solid #abd3ab; /* Keep border same color */
+  }
+  
+
+  /* Static footer at the bottom */
+  .footer {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: static; /* Ensure the footer stays at the bottom */
+    bottom: 0;
+  }
+  

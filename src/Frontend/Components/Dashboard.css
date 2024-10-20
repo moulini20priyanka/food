@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    background-color: #6a1b9a;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .header nav a:hover {
+    color: #ffeb3b; /* Highlight on hover */
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .feed {
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .feed-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px; /* Adjust as needed */
+  }
+  
+  .feed-image {
+    width: 300px; /* Fixed width for image */
+    height: auto;
+    border-radius: 10px 0 0 10px; /* Rounded corners */
+  }
+  
+  .feed-content {
+    padding: 20px;
+  }
+  
+  .feed-content h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  
+  .feed-content p {
+    margin-bottom: 15px;
+  }
+  
+  .donate-button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .donate-button:hover {
+    background-color: #5e4e88;
+  }
+  
+  .image-section {
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust gap between images */
+  }
+  
+  .work-image {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust width to fit within the container */
+    max-width: calc(30% - 20px); /* Ensure max width fits within the container */
+    margin: 10px 0;
+    border-radius: 8px; /* Optional for image rounding */
+  }
+  
+  .door-pickup {
+    margin-top: 40px; /* Add spacing above */
+  }
+
+  nav a {
+    display: inline-block; /* Make the links appear as buttons */
+    padding: 10px 20px; /* Add padding for a button-like look */
+    margin: 0 5px; /* Space between buttons */
+    border: 1px solid #abd3ab; /* Border color matching the example */
+    border-radius: 4px; /* Rounded corners */
+    color: #abd3ab; /* Text color */
+    text-decoration: none; /* Remove underline */
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  nav a.active {
+    background-color: #abd3ab; /* Background color when active */
+    color: white; /* Text color when active */
+    border: 1px solid #abd3ab; /* Keep border same color */
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: static; /* Ensure the footer stays at the bottom */
+    bottom: 0;
+  }
+  
