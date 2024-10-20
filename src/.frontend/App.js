@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-=======
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Dashboard from './Frontend/Components/Dashboard';
-import Signup from './Frontend/Components/Signup';
-import DonationForm from './Frontend/Components/DonationForm';
-import Profile from './Frontend/Components/Profile'; // Import the Profile component
-
+import Dashboard from './Components/Dashboard';
+import Signup from './Components/Signup';
+import DonationForm from './Components/DonationForm';
+import Profile from './Components/Profile'; // Import the Profile component
+import logo from './logo.svg';
+import './App.css';
 const App = () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
->>>>>>> 692e995cbb7b94d79593ec5745942ed3905e22d2
 
   return (
     <Router>
