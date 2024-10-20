@@ -4,7 +4,6 @@ import Dashboard from './Components/Dashboard';
 import Signup from './Components/Signup';
 import DonationForm from './Components/DonationForm';
 import Profile from './Components/Profile'; // Import the Profile component
-
 import './App.css';
 const App = () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
