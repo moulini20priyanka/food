@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import './Signup.css'; // Make sure this path is correct
 
 const Signup = ({ setIsSignedIn }) => {
@@ -9,15 +10,33 @@ const Signup = ({ setIsSignedIn }) => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (password === confirmPassword) {
-      console.log('Sign up successful!');
-      setIsSignedIn(true);
-      navigate('/dashboard');
-    } else {
+    if (password !== confirmPassword) {
       alert("Passwords don't match!");
+      return;
+    }
+
+    try {
+      // Make a POST request to the backend API
+      const response = await axios.post('http://localhost:5000/signup', {
+        fullName,
+        email,
+        password
+      });
+
+      if (response.status === 201) {
+        console.log('Sign up successful!');
+        setIsSignedIn(true);
+        navigate('/dashboard');
+      }
+    } catch (error) {
+      if (error.response) {
+        alert(error.response.data.message);
+      } else {
+        console.error('Sign-up error:', error);
+      }
     }
   };
 
